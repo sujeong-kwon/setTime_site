@@ -1,0 +1,65 @@
+@charset "UTF-8";
+* { margin: 0; padding: 0; }
+html, body{ height: 100% }
+
+body{
+  background: #b2def7;
+}
+
+.wrap{
+  width: 100%;
+  text-align: center;
+}
+
+#img{
+  position: relative;
+  top: 250px;
+  width : 300px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+#txt{
+  position: relative;
+  top: 250px;
+  display: block;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px #65c2f7;
+}
+
+#txt p:nth-of-type(1){
+  color: white;
+  text-shadow: 0 0 0;
+}
+
+#txt p:nth-of-type(2){
+  color: #d9f1ff;
+  font-size: 16px;
+  text-shadow: 0 0 0;
+  padding-top: 5px;
+}
+
+#txt p:nth-of-type(3){
+  color: red;
+  font-size: 16px;
+  text-shadow: 0 0 0;
+}
+
+@keyframes alarm {
+  0%{ transform: translate(0);}
+  20%{ transform: translate(-2px, 2px);}
+  40%{ transform: translate(-2px -2px);}
+  60%{ transform: translate(2px 2px);}
+  80%{ transform: translate(2px, -2px);}
+  100%{ transform: translate(0);}
+  /* translateX() => 가로로 이동 (+값 오른쪽 -값 왼쪽)
+  translateY() => 세로로 이동 (+값 아래쪽 -값 위쪽)
+  translate(X,Y) => 가로세로 값으로 이동  */
+}
